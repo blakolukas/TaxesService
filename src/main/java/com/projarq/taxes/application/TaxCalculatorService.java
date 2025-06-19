@@ -1,9 +1,12 @@
 package com.projarq.taxes.application;
 
+import org.springframework.stereotype.Service;
+
 import com.projarq.taxes.domain.Tax;
 import com.projarq.taxes.domain.TaxCalculator;
 import com.projarq.taxes.domain.TaxRepository;
 
+@Service
 public class TaxCalculatorService implements TaxCalculator {
     private final TaxRepository taxRepository;
 
