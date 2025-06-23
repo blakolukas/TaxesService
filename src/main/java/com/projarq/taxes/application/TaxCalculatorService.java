@@ -20,6 +20,6 @@ public class TaxCalculatorService implements TaxCalculator {
         if (tax == null) {
             throw new IllegalArgumentException("Imposto não encontrado para o estado: " + state);
         }
-        return value * (1 + tax.getRate());
+        return value * tax.getRate();
     }
 } 
